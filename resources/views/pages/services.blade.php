@@ -1,19 +1,7 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>{{config('app.name', 'LSAPP')}}</title>
+@section('content')
+  <h1>Services</h1>
+  <p>This is the services page</p>
+@endsection 
 
-        <!-- Fonts -->
-        
-
-        <!-- Styles -->
-        
-    </head>
-    <body>
-        <h1>Services</h1>
-        <p>This is the services page</p>
-    </body>
-</html>
