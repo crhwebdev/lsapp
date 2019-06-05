@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*
 Route::get('/hello', function () {
-    return 'Hello world';
+    return '<h1>Hello world</h1>';
+});
+*/
+
+Route::get('/about', function (){
+    // returns a view from pages/about.blade.php
+    // can use slash or dot format when refering to view
+
+    return view('pages.about');
 });
