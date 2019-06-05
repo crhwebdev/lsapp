@@ -11,9 +11,11 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 
 /*
 Route::get('/hello', function () {
@@ -27,6 +29,8 @@ Route::get('users/{id}', function($id){
     return 'This is user '.$id;
 });
 */
+
+Route::get('/', 'PagesController@index');
 
 Route::get('/about', function (){
     // returns a view from pages/about.blade.php
