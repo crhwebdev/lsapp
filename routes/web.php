@@ -32,10 +32,7 @@ Route::get('users/{id}', function($id){
 
 Route::get('/', 'PagesController@index');
 
-Route::get('/about', function (){
-    // returns a view from pages/about.blade.php
-    // can use slash or dot format when refering to view
+Route::get('/about', 'PagesController@about');
 
-    return view('pages.about');
-});
+Route::get('/services', 'PagesController@services');
 
