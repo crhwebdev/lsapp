@@ -27,3 +27,8 @@ Route::get('/about', function (){
 
     return view('pages.about');
 });
+
+// Route that demonstrates inserting dynamic values into route
+Route::get('users/{id}', function($id){
+    return 'This is user '.$id;
+});
