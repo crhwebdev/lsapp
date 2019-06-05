@@ -21,6 +21,13 @@ Route::get('/hello', function () {
 });
 */
 
+/*
+// Route that demonstrates inserting dynamic values into route
+Route::get('users/{id}', function($id){
+    return 'This is user '.$id;
+});
+*/
+
 Route::get('/about', function (){
     // returns a view from pages/about.blade.php
     // can use slash or dot format when refering to view
@@ -28,7 +35,3 @@ Route::get('/about', function (){
     return view('pages.about');
 });
 
-// Route that demonstrates inserting dynamic values into route
-Route::get('users/{id}', function($id){
-    return 'This is user '.$id;
-});
